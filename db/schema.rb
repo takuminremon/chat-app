@@ -71,10 +71,7 @@ ActiveRecord::Schema.define(version: 2020_11_04_162221) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-<<<<<<< Updated upstream
-=======
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
->>>>>>> Stashed changes
   add_foreign_key "messages", "rooms"
   add_foreign_key "messages", "users"
   add_foreign_key "room_users", "rooms"
